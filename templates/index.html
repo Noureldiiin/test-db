@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Medical Lab</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Analysis Laboratory</h1>
+        <form id="addPatientForm">
+            <label for="patient_id">Patient ID:</label>
+            <input type="text" id="patient_id" name="patient_id" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+            
+            <label for="diagnosis">Diagnosis:</label>
+            <input type="text" id="diagnosis" name="diagnosis" required>
+            
+            <button type="button" onclick="addPatient()">Add Patient</button>
+        </form>
+
+        <div id="viewPatientDiv"></div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medical Laboratory Application</title>
+</head>
+<body>
+    <h1>Medical Laboratory Application</h1>
+
+    <!-- Form to add a new patient -->
+    <form id="addPatientForm">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+        <label for="testType">Test Type:</label>
+        <input type="text" id="testType" name="testType" required>
+        <button type="button" onclick="addPatient()">Add Patient</button>
+    </form>
+
+    <!-- Display list of patients -->
+    <div id="patientList">
+        <h2>Patients List</h2>
+        <ul id="patients"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
